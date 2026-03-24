@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caloroso Roaster and Eatery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Dancing+Script:wght@700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    Caloroso
+    <small>Roaster &amp; Eatery</small>
+  </div>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- NAV DROPDOWN -->
+<div class="nav-dropdown" id="navDropdown">
+  <button class="nav-close-btn" id="closeMenuBtn">&#x2715;</button>
+  <a href="#about">About</a>
+  <a href="#hours">Hours</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO BANNER -->
+<div class="hero-banner">
+  <img src="coverphoto.jpg" alt="Caloroso Roaster and Eatery">
+  <div class="hero-overlay">
+    <div class="hero-script">Caloroso</div>
+    <div class="hero-sub">Roaster &amp; Eatery &mdash; George</div>
+  </div>
+</div>
+
+<!-- INFO BAR -->
+<div class="info-bar">
+  <a href="tel:+27822685633" class="info-bar-item call-btn">Call Us</a>
+  <div class="info-bar-sep"></div>
+  <a href="https://wa.me/27822685633" class="info-bar-item wa-btn-info">
+    <svg class="wa-icon-sm" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="16" fill="#25D366"/>
+      <path d="M23.5 8.5A10.4 10.4 0 0 0 16 5.5C10.2 5.5 5.5 10.2 5.5 16c0 1.8.5 3.6 1.4 5.2L5.5 26.5l5.5-1.4A10.4 10.4 0 0 0 16 26.5c5.8 0 10.5-4.7 10.5-10.5 0-2.8-1.1-5.4-3-7.5zm-7.5 16.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.2.8.9-3.1-.2-.3A8.6 8.6 0 0 1 7.4 16c0-4.7 3.9-8.6 8.6-8.6 2.3 0 4.5.9 6.1 2.5a8.5 8.5 0 0 1 2.5 6.1c0 4.7-3.8 8.6-8.6 8.6zm4.7-6.4c-.3-.1-1.6-.8-1.8-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3 4.8 4.2.7.3 1.2.4 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z" fill="white"/>
+    </svg>
+    WhatsApp
+  </a>
+  <div class="info-bar-sep"></div>
+  <span class="info-bar-item" id="today-status" style="color:#6aaa70;">● Open Now</span>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-tag">Welcome</div>
+  <h2>Good Food,<br>Great Coffee</h2>
+  <p>Caloroso Roaster and Eatery is your go-to spot in George for freshly roasted coffee, hearty breakfasts, and delicious light meals.</p>
+  <p>Located in the heart of Central George, inside Anita Boutique, we bring warmth and flavour to every visit.</p>
+  <div class="tags">
+    <span class="tag">Specialty Coffee</span>
+    <span class="tag">Breakfast</span>
+    <span class="tag">Vegetarian Options</span>
+    <span class="tag">Happy Hour Food</span>
+    <span class="tag">Live Music</span>
+    <span class="tag">Dine In</span>
+  </div>
+</section>
+
+<!-- PHOTO GRID 3 -->
+<div class="photo-grid-3">
+  <div class="pg-item" style="min-height:220px;">
+    <img src="diningarea.jpg" alt="Dining Area">
+    <div class="pg-label">Dining Area</div>
+  </div>
+  <div class="right-col">
+    <div class="pg-item">
+      <img src="coffe.jpg" alt="Coffee">
+      <div class="pg-label">Coffee</div>
+    </div>
+    <div class="pg-item">
+      <img src="breakfast.jpg" alt="Breakfast">
+      <div class="pg-label">Breakfast</div>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER BLOCK 1 - VIEW MENU -->
+<div class="banner-block">
+  <img src="ourmenu.jpg" alt="Our Menu">
+  <div class="banner-overlay">
+    <div class="banner-script">Our Menu</div>
+    <button class="banner-btn" onclick="openMenu()">View Menu</button>
+  </div>
+</div>
+
+<!-- PHOTO GRID 2 -->
+<div class="photo-grid-2">
+  <div class="pg-item">
+    <img src="meals.jpg" alt="Meals">
+    <div class="pg-label">Meals</div>
+  </div>
+  <div class="pg-item">
+    <img src="pastries.jpg" alt="Pastries">
+    <div class="pg-label">Pastries</div>
+  </div>
+</div>
+
+<!-- OPENING HOURS -->
+<div class="hours-section" id="hours">
+  <div class="section-tag" style="text-align:center;">We Are Open</div>
+  <h2>Opening Hours</h2>
+  <div style="text-align:center; margin-bottom:1rem;">
+    <span id="today-status" style="font-size:0.85rem; font-weight:700;"></span><br>
+    <span style="font-size:0.8rem; color:#888;" id="today-hours"></span>
+  </div>
+  <ul class="hours-list">
+    <li><span class="day">Monday</span><span class="time">07:00 AM – 05:00 PM</span></li>
+    <li><span class="day">Tuesday</span><span class="time">07:00 AM – 05:00 PM</span></li>
+    <li><span class="day">Wednesday</span><span class="time">07:00 AM – 05:00 PM</span></li>
+    <li><span class="day">Thursday</span><span class="time">07:00 AM – 05:00 PM</span></li>
+    <li><span class="day">Friday</span><span class="time">07:00 AM – 05:00 PM</span></li>
+    <li><span class="day">Saturday</span><span class="time">08:30 AM – 02:00 PM</span></li>
+    <li><span class="day">Sunday</span><span class="time" style="color:#cc7050;">Closed</span></li>
+  </ul>
+</div>
+
+<!-- BANNER BLOCK 2 - VIEW MENU -->
+<div class="banner-block">
+  <img src="atmosphere.jpg" alt="Atmosphere">
+  <div class="banner-overlay">
+    <div class="banner-script">Taste the Difference</div>
+    <button class="banner-btn" onclick="openMenu()">View Menu</button>
+  </div>
+</div>
+
+<!-- PHOTO GRID 2 -->
+<div class="photo-grid-2">
+  <div class="pg-item">
+    <img src="waffles.jpg" alt="Waffles">
+    <div class="pg-label">Waffles</div>
+  </div>
+  <div class="pg-item">
+    <img src="ourteam.jpg" alt="Our Team">
+    <div class="pg-label">Our Team</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="info-section" id="contact">
+  <h2>Find Us</h2>
+
+  <div class="info-row">
+    <div class="info-icon">Addr</div>
+    <div class="info-text">
+      <strong>Address</strong>
+      <p>103 Meade St, Central<br>George, 6530<br>Located in Anita Boutique</p>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-icon">Call</div>
+    <div class="info-text">
+      <strong>Phone</strong>
+      <a href="tel:+27822685633">082 268 5633</a>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-icon">Chat</div>
+    <div class="info-text">
+      <strong>WhatsApp</strong>
+      <a href="https://wa.me/27822685633" class="wa-link-btn">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="16" fill="#25D366"/>
+          <path d="M23.5 8.5A10.4 10.4 0 0 0 16 5.5C10.2 5.5 5.5 10.2 5.5 16c0 1.8.5 3.6 1.4 5.2L5.5 26.5l5.5-1.4A10.4 10.4 0 0 0 16 26.5c5.8 0 10.5-4.7 10.5-10.5 0-2.8-1.1-5.4-3-7.5zm-7.5 16.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.2.8.9-3.1-.2-.3A8.6 8.6 0 0 1 7.4 16c0-4.7 3.9-8.6 8.6-8.6 2.3 0 4.5.9 6.1 2.5a8.5 8.5 0 0 1 2.5 6.1c0 4.7-3.8 8.6-8.6 8.6zm4.7-6.4c-.3-.1-1.6-.8-1.8-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3 4.8 4.2.7.3 1.2.4 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z" fill="white"/>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MAP BOX -->
+<div class="map-box">
+  <p>103 Meade St, Central, George, 6530</p>
+  <a href="https://maps.google.com/?q=103+Meade+St+Central+George+6530" target="_blank">Open in Google Maps</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Caloroso</div>
+  <div class="footer-tagline">Roaster &amp; Eatery &mdash; George</div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Caloroso Roaster and Eatery. All rights reserved.</div>
+</footer>
+
+<!-- MENU MODAL -->
+<div class="menu-modal" id="menuModal" onclick="if(event.target===this)closeMenu()">
+  <button class="menu-modal-close" onclick="closeMenu()">&#x2715;</button>
+  <div class="menu-modal-title">Our Menu</div>
+  <img src="ourmainmenu.jpg" alt="Menu">
+  <img src="ourmainmenu2.jpg" alt="Breakfast">
+  <p class="menu-modal-hint">Pinch to zoom &middot; Tap X to close</p>
+</div>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <a href="https://wa.me/27822685633" class="sticky-wa">
+    <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="16" fill="white" fill-opacity="0.2"/>
+      <path d="M23.5 8.5A10.4 10.4 0 0 0 16 5.5C10.2 5.5 5.5 10.2 5.5 16c0 1.8.5 3.6 1.4 5.2L5.5 26.5l5.5-1.4A10.4 10.4 0 0 0 16 26.5c5.8 0 10.5-4.7 10.5-10.5 0-2.8-1.1-5.4-3-7.5zm-7.5 16.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.2.8.9-3.1-.2-.3A8.6 8.6 0 0 1 7.4 16c0-4.7 3.9-8.6 8.6-8.6 2.3 0 4.5.9 6.1 2.5a8.5 8.5 0 0 1 2.5 6.1c0 4.7-3.8 8.6-8.6 8.6zm4.7-6.4c-.3-.1-1.6-.8-1.8-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3 4.8 4.2.7.3 1.2.4 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z" fill="white"/>
+    </svg>
+    WhatsApp Us
+  </a>
+  <div class="bar-sep"></div>
+  <a href="tel:+27822685633">Call Us</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
